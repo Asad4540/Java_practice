@@ -26,7 +26,7 @@ public class Solution{
 	  bird.walk();
 	  bird.fly();
       bird.sing();
-    // System.out.println("Hello");
+      // System.out.println("Hello");
 	
    }
 }
