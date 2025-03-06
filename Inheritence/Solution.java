@@ -1,32 +1,23 @@
 package Inheritence;
 
-import java.io.*;
-import java.util.*;
-import java.text.*;
-import java.math.*;
-import java.util.regex.*;
+class Teacher {
+	String Designation = "Teacher";
+	String Salary = "35000";
 
-class Animal{
-	void walk(){
-		System.out.println("I am walking");
+	void does() {
+		System.out.println("Teaching");
 	}
 }
 
-class Bird extends Animal{
-	void fly(){
-		System.out.println("I am flying");
+class JavaTeacher extends Teacher {
+	String MainSubject = "Java";
+
+	public static void main(String[] args) {
+		JavaTeacher obj = new JavaTeacher();
+		System.out.println(obj.Designation);
+		System.out.println(obj.Salary);
+		System.out.println(obj.MainSubject);
 	}
 }
 
-public class Solution{
 
-   public static void main(String args[]){
-
-	  Bird bird = new Bird();
-	  bird.walk();
-	  bird.fly();
-      bird.sing();
-      // System.out.println("Hello");
-	
-   }
-}
